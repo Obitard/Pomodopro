@@ -1,0 +1,25 @@
+.sidebar {
+  width: 200px;
+  background-color: #181818;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-right: 1px solid #333;
+}
+
+.menu button {
+  padding: 10px 15px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.menu button:hover {
+  background-color: #2c2c2c;
+}

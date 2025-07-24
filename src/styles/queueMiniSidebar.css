@@ -1,0 +1,94 @@
+.queue-mini-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 100vh;
+  padding: 16px;
+  background-color: #0f0f0f;
+  border-left: 1px solid #333;
+  width: 240px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.queue-mini-sidebar h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.queue-mini-sidebar .badge {
+  background-color: #3b82f6;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  margin-left: 8px;
+}
+
+.queue-content-wrapper {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 8px;
+  padding-right: 4px;
+}
+
+.queue-mini-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.queue-mini-sidebar li {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.queue-mini-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.queue-mini-content button {
+  background: none;
+  border: none;
+  color: #888;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 2px 6px;
+}
+
+.queue-mini-content button:hover {
+  color: #f87171;
+}
+
+.empty {
+  color: #666;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.clear-queue-btn {
+  margin-top: 12px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #1a1a1a;
+  color: #f87171;
+  border: 1px solid #444;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  align-self: center;
+}
+
+.clear-queue-btn:hover {
+  background-color: #2c2c2c;
+  transform: scale(1.03);
+}

@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    border-bottom: 1px solid #333;
+  }
+  
+  .logo {
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f0f0f0;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .auth-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #888;
+    color: #f0f0f0;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #1f1f1f;
+  }
+  

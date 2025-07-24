@@ -1,0 +1,158 @@
+.timer-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Champ + bouton "Lancer" */
+
+.manual-start-row {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  justify-content: center;
+}
+
+.manual-start-row input[type='number'] {
+  flex: 1;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: 2px solid #444;
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.manual-start-row input[type='number']:focus {
+  border-color: #777;
+}
+
+.start-btn {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 1px solid #444;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.start-btn:hover {
+  background-color: #2c2c2c;
+  transform: scale(1.03);
+}
+
+/* Boutons ajout file */
+
+.queue-buttons-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.queue-buttons-row button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.queue-buttons-row button:nth-child(1) {
+  border-color: #10b981;
+}
+
+.queue-buttons-row button:nth-child(1):hover {
+  background-color: #10b98122;
+}
+
+.queue-buttons-row button:nth-child(2) {
+  border-color: #3b82f6;
+}
+
+.queue-buttons-row button:nth-child(2):hover {
+  background-color: #3b82f622;
+}
+
+/* Lancer la file */
+
+.start-queue-btn {
+  margin-top: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 2px solid #888;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.start-queue-btn:hover:not(:disabled) {
+  background-color: #2c2c2c;
+  transform: scale(1.03);
+}
+
+.start-queue-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Pause */
+
+.pause-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 2px solid #facc15;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.pause-btn:hover {
+  background-color: #2c2c2c;
+  transform: scale(1.03);
+}
+
+/* Reset */
+
+.reset-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border: 2px solid #ef4444;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.reset-btn:hover {
+  background-color: #2c2c2c;
+  transform: scale(1.03);
+}
+
+/* Feedback ✅ */
+
+.feedback {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #10b981;
+  text-align: center;
+}

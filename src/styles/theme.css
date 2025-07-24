@@ -1,0 +1,51 @@
+/* --------------------
+   STRUCTURE & LAYOUT
+--------------------- */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* HEADER */
+
+header {
+  padding: 16px 24px;
+  background-color: #111;
+  color: #f0f0f0;
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LAYOUT GLOBAL */
+
+.main-layout {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+/* CONTENU PRINCIPAL */
+
+.main-content {
+  flex: 1;
+  padding: 40px 30px;
+  background-color: #121212;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* SECTION FILE PRINCIPALE */
+
+.queue-section {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 20px;
+}

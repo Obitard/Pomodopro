@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- Déclare le type de document comme HTML5 -->
+<html lang="fr">
+<!-- Langue principale du document : français -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Encodage des caractères en UTF-8 (permet d’afficher les accents correctement) -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Pour que le site soit responsive sur mobile (ajuste la mise en page selon la taille de l'écran) -->
+
+  <title>Pomodopro</title>
+  <!-- Titre affiché dans l’onglet du navigateur -->
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- Fichier CSS externe qui contient le style de la page -->
+</head>
+
+<body>
+  <!-- Corps de la page web -->
+
+  <header>
+    <!-- En-tête du site, contient la navigation -->
+    <nav class="main-nav">
+      <!-- Barre de navigation principale -->
+
+      <ul class="nav-left">
+        <!-- Groupe de boutons à gauche (changement d’onglets) -->
+        <li><button id="tab-timer" class="nav-btn active">Timer</button></li>
+        <!-- Bouton pour afficher l’onglet "Timer" (actif par défaut) -->
+        <li><button id="tab-queue" class="nav-btn">File d'attente</button></li>
+        <!-- Bouton pour afficher l’onglet "File d’attente" -->
+      </ul>
+
+      <ul class="nav-right">
+        <!-- Groupe de boutons à droite (authentification) -->
+        <li><button id="btn-login" class="auth-btn">Connexion</button></li>
+        <!-- Bouton pour se connecter -->
+        <li><button id="btn-signup" class="auth-btn">Inscription</button></li>
+        <!-- Bouton pour s’inscrire -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Section principale du site -->
+
+    <section id="timer-section" class="content-section active-section">
+      <!-- Section visible par défaut : Timer -->
+
+      <div class="button-container">
+        <!-- Conteneur principal pour les boutons -->
+
+        <div class="top-button">
+          <!-- Zone de saisie personnalisée -->
+          <input type="number" id="custom-minutes" placeholder="Durée (min)" min="1" step="1" />
+          <!-- Champ pour entrer une durée personnalisée en minutes -->
+
+          <select id="task-type">
+            <!-- Sélection du type de tâche (travail ou pause) -->
+            <option value="work">Travail</option>
+            <option value="pause">Pause</option>
+          </select>
+
+          <button id="btn-add-queue" class="big-btn">➕ Ajouter à la file</button>
+          <!-- Bouton pour ajouter la tâche personnalisée à la file d’attente -->
+        </div>
+
+        <div class="preset-buttons">
+          <!-- Boutons de durée prédéfinie -->
+          <button data-minutes="25" data-type="work" class="preset-btn">Travail 25 min</button>
+          <button data-minutes="5" data-type="pause" class="preset-btn">Pause 5 min</button>
+          <button data-minutes="15" data-type="pause" class="preset-btn">Pause longue 15 min</button>
+          <!-- Ces boutons ajoutent une tâche directement à la file avec des durées prédéfinies -->
+        </div>
+
+        <div class="control-buttons">
+          <!-- Boutons de contrôle de la file et du timer -->
+          <button id="btn-start" class="big-btn">Démarrer la file</button>
+          <!-- Lance la file d'attente -->
+          <button id="btn-pause" class="big-btn">Pause / Reprendre</button>
+          <!-- Met le timer en pause ou le reprend -->
+          <button id="btn-reset" class="big-btn">Reset</button>
+          <!-- Réinitialise le timer actuel -->
+          <button id="btn-clear" class="big-btn">Vider la file</button>
+          <!-- Vide toutes les tâches de la file d’attente -->
+        </div>
+      </div>
+
+      <p id="countdown">00:00</p>
+      <!-- Affichage du compte à rebours actuel -->
+
+      <p id="current-task-label" class="task-label">Aucun timer actif</p>
+      <!-- Texte affichant le type de tâche en cours (ou aucun si inactif) -->
+    </section>
+
+    <section id="queue-section" class="content-section">
+      <!-- Deuxième section : file d’attente, affichée quand on clique sur "File d’attente" -->
+      <h2>File d'attente</h2>
+      <!-- Titre de la section -->
+      <ul id="queue-list"></ul>
+      <!-- Liste dynamique qui contiendra les tâches en attente (li générés en JS) -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <!-- Inclusion du fichier JavaScript pour faire fonctionner le timer et la file d’attente -->
+</body>
+</html>
