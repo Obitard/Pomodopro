@@ -1,12 +1,41 @@
-# React + Vite
+# 🕒 Pomodoro — Application de productivité moderne
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18.3.1-blue?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-5.0-ffca28?style=for-the-badge&logo=vite)
+![CSS](https://img.shields.io/badge/Styled%20with-CSS3-blue?style=for-the-badge&logo=css3)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 À propos
 
-## Expanding the ESLint configuration
+**Pomodoro** est une application moderne de gestion du temps, basée sur la **méthode Pomodoro**.  
+Elle te permet d’alterner entre travail et pauses de manière fluide, tout en gardant une interface claire, élégante et ergonomique.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+L’application a été développée en **React + Vite**, avec un **thème sombre moderne**, des **pré-réglages intelligents** et une **file d’attente dynamique**.
+
+---
+
+## 🚀 Fonctionnalités principales
+
+✅ **Timer intelligent**
+- Lance une session de travail ou de pause.
+- Gère la file d’attente (enchaînement automatique).
+
+✅ **Pré-réglages rapides**
+- `Pomodoro 25′` → ajoute un travail de 25 min.  
+- `Pause 5′` → ajoute une pause courte.  
+- `Longue 15′` → ajoute une pause longue.  
+- `Cycle complet 🔁` → ajoute un cycle complet (25′ → 5′ → 25′ → 15′).
+
+✅ **Interface moderne & responsive**
+- Thème sombre “glass” avec ombres douces.  
+- Barre latérale avec compteur de file et suppression individuelle.  
+- Adaptation mobile (la sidebar devient une barre horizontale).  
+
+✅ **Expérience fluide**
+- Boutons `Lancer`, `Pause`, `Reset` et `Vider la file`.  
+- Messages de confirmation animés (✅ “Session ajoutée”).  
+- Interface compacte et accessible sans défilement.
+
+---
