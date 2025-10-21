@@ -28,11 +28,6 @@ L’application a été développée en **React + Vite**, avec un **thème sombr
 - `Longue 15′` → ajoute une pause longue.  
 - `Cycle complet 🔁` → ajoute un cycle complet (25′ → 5′ → 25′ → 15′).
 
-✅ **Interface moderne & responsive**
-- Thème sombre “glass” avec ombres douces.  
-- Barre latérale avec compteur de file et suppression individuelle.  
-- Adaptation mobile (la sidebar devient une barre horizontale).  
-
 ✅ **Expérience fluide**
 - Boutons `Lancer`, `Pause`, `Reset` et `Vider la file`.  
 - Messages de confirmation animés (✅ “Session ajoutée”).  
